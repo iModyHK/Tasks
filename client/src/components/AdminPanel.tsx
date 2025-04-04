@@ -1,6 +1,6 @@
-
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import ThemeSettings from './ThemeSettings';
 
 function AdminPanel() {
   const [users, setUsers] = useState([]);
@@ -22,7 +22,7 @@ function AdminPanel() {
   return (
     <div className="p-4">
       <h2 className="text-xl font-bold mb-4">Admin Panel</h2>
-      <table className="border-collapse border w-full">
+      <table className="border-collapse border w-full mb-6">
         <thead>
           <tr>
             <th className="border p-2">Name</th>
@@ -46,20 +46,11 @@ function AdminPanel() {
           ))}
         </tbody>
       </table>
+
+      {/* Add ThemeSettings */}
+      <ThemeSettings />
     </div>
   );
 }
 
 export default AdminPanel;
-
-import ThemeSettings from './ThemeSettings';
-
-function AdminPanel() {
-  // ... existing code
-  return (
-    <div>
-      {/* existing elements */}
-      <ThemeSettings />
-    </div>
-  );
-}
