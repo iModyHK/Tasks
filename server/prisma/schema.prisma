@@ -1,0 +1,21 @@
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Settings {
+  id          Int      @id @default(autoincrement())
+  siteName    String   @default("Team Task Manager")
+  themeColor  String   @default("#006c35")
+  font        String   @default("default")
+  themeVariant String  @default("light")
+  logoUrl     String   @default("")
+  faviconUrl  String   @default("")
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}

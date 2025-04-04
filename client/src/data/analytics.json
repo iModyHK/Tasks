@@ -1,0 +1,38 @@
+{
+  "tasksCompleted": [
+    5,
+    8,
+    12,
+    10,
+    15,
+    20,
+    18
+  ],
+  "activeUsers": [
+    3,
+    6,
+    4,
+    5,
+    7,
+    9,
+    8
+  ],
+  "completionRate": 85,
+  "activityLog": [
+    {
+      "user": "Aisha",
+      "action": "Completed Task",
+      "time": "10:45 AM"
+    },
+    {
+      "user": "Omar",
+      "action": "Commented",
+      "time": "11:00 AM"
+    },
+    {
+      "user": "Sara",
+      "action": "Updated status",
+      "time": "11:10 AM"
+    }
+  ]
+}

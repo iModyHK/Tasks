@@ -1,0 +1,17 @@
+
+model Task {
+  id            Int      @id @default(autoincrement())
+  title         String
+  description   String
+  status        String
+  parentId      Int?
+  parent        Task?    @relation("Subtasks", fields: [parentId], references: [id])
+  subtasks      Task[]   @relation("Subtasks")
+  dependencies  Task[]   @relation("Dependencies", references: [id])
+  userId        Int
+  user          User     @relation(fields: [userId], references: [id])
+  repeatInterval String?
+  nextOccurrence DateTime?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}

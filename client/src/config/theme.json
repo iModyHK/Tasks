@@ -1,0 +1,17 @@
+{
+  "theme": {
+    "light": {
+      "primary": "#3b82f6",
+      "secondary": "#fbbf24",
+      "background": "#ffffff",
+      "text": "#1f2937"
+    },
+    "dark": {
+      "primary": "#60a5fa",
+      "secondary": "#facc15",
+      "background": "#1e293b",
+      "text": "#f1f5f9"
+    }
+  },
+  "default": "light"
+}
